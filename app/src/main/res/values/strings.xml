@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BaseApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">امیرحسین سوری</string>
+    <string name="nav_header_subtitle">amirhusseinSoori75@Gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_Search">Search</string>
+    <string name="menu_home">صفحه اصلی</string>
+    <string name="menu_atm">ATM</string>
+    <string name="menu_setting">تنظیمات</string>
+    <string name="menu_logout">خروج از حساب کاربری</string>
+    <string name="email">ایمیل:</string>
+    <string name="passwordemail">رمز ایمیل:</string>
+    <string name="signup">ورود به حساب کاربری</string>
+    <string name="appname">ATM</string>
+    <string name="preference_file_name">Profile Preference</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_user">نام کاربر</string>
+    <string name="email_address">آدرس ایمیل</string>
+    <string name="phone_number">شماره موبایل</string>
+    <string name="new_account">حساب جدید</string>
+    <string name="delivery_address">محل سکونت</string>
+    <string name="password">رمز عبور</string>
+    <string name="true_password">تایید رمز عبور</string>
+    <string name="register">ثبت حساب جدید</string>
+    <string name="text_version">1.1</string>
+    <string name="profile">profile</string>
+    <string name="messages">پیغام ها</string>
+    <string name="settings">تنظیمات</string>
+    <string name="sync">همگام ساز</string>
+    <string name="sync_update_app">بروزرسانی برنامه</string>
+    <string name="notifications">اعلان ها</string>
+    <string name="notifications_alarm">هشدار اعلان</string>
+    <string name="volume">میزان صدا</string>
+    <string name="profile_particulars">مشخصات کاربر</string>
+
+
+</resources>

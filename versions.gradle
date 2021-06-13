@@ -1,0 +1,40 @@
+/**
+ * Shared file between builds so that they can all use the same dependencies and
+ * maven repositories.
+ **/
+ext.deps = [:]
+def versions = [:]
+
+versions.navigation = '2.3.5'
+versions.lottie = '3.4.1'
+versions.sdp_version = "1.0.6"
+versions.coroutines = '1.4.3'
+
+
+def navigation = [:]
+navigation.fragment_ktx = "androidx.navigation:navigation-fragment-ktx:$versions.navigation"
+navigation.ui_ktx = "androidx.navigation:navigation-ui-ktx:$versions.navigation"
+deps.navigation = navigation
+
+
+def coroutines = [:]
+coroutines.android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines"
+coroutines.core =  "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+deps.coroutines = coroutines
+
+
+def util = [:]
+util.lotti = "com.airbnb.android:lottie:$versions.lottie"
+util.sdp = "com.intuit.sdp:sdp-android:$versions.sdp_version"
+deps.util = util
+
+
+ext.deps = deps
+
+def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+    handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+ext.addRepos = this.&addRepos

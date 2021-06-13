@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#805D1049"
+        tools:ignore="Orientation"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aguafina_script"
+        android:gravity="center"
+        android:text="ATM"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:theme="@style/EditScreenTextInputLayoutStyleLight"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/textField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconContentDescription="content_description_end_icon"
+        app:startIconDrawable="@drawable/ic_email_white"
+        app:startIconTint="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/iran_sans_mobile"
+            android:hint="آدرس ایمیل"
+            android:inputType="text"
+            android:textSize="10sp"
+            android:theme="@style/EditScreenTextInputLayoutStyleLight" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="450dp"
+        android:gravity="center"
+        android:theme="@style/EditScreenTextInputLayoutStyleLight"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_LoginF_Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:startIconDrawable="@drawable/ic_lock_white"
+        app:startIconTint="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/iran_sans_mobile"
+            android:hint="رمز ایمیل"
+            android:inputType="text"
+            android:textSize="10sp"
+            android:theme="@style/EditScreenTextInputLayoutStyleLight" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_LoginF_Submit"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshapegrey"
+        android:elevation="10dp"
+        android:fontFamily="@font/iran_sans_mobile"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ورود به حساب کاربری"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@id/Guide_right_vertical"
+        app:layout_constraintStart_toStartOf="@id/Guide_left_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <Button
+        android:id="@+id/editText"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:background="@drawable/buttonshapegrey"
+        android:fontFamily="@font/iran_sans_mobile"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ساخت حساب جدید"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/Guide_down_horizontal"
+        app:layout_constraintEnd_toEndOf="@id/Guide_right_vertical"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@id/Guide_left_vertical"
+        app:layout_constraintTop_toTopOf="@id/Guide_top_horizontal"
+        app:layout_constraintVertical_bias="0.896" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guide_left_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guide_right_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guide_top_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guide_down_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
